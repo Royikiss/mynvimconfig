@@ -16,6 +16,7 @@ require("mason-lspconfig").setup({
     "bashls",
     "jdtls",
     "pyright",
+    "ltex"
   },
 })
 
@@ -34,5 +35,8 @@ require("lspconfig").jdtls.setup {
   capabilities = capabilities,
 }
 require("lspconfig").pyright.setup {
+  capabilities = capabilities,
+}
+require("lspconfig").ltex.setup {
   capabilities = capabilities,
 }
