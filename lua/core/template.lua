@@ -29,7 +29,6 @@ function SetTitle()
     vim.api.nvim_buf_set_lines(0, -1, -1, false, {
       "#include <iostream>",
       "#include <algorithm>",
-      "#include <list>",
       "#include <vector>",
       "#include <queue>",
       "#include <stack>",
@@ -43,6 +42,8 @@ function SetTitle()
       "#include <sstream>",
       "#include <functional>",
       "",
+      "#define TEST_BEGINS(x) namespace x {",
+      "#define TEST_ENDS(x) } // end of namespace x",
       "using namespace std;",
       ""
     })
